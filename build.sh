@@ -1,0 +1,2 @@
+clang++ -static-libstdc++ -g main.cpp build/Debug_aarch64-none-linux-unknown/BeefyScope/BeefyScope.a ~/Beef/build_rt_d/Debug/bin/libBeefRT_d.a ~/Beef/build_rt_d/Debug/bin/libBeefySysLib_d.so -o dist/BeefyScope -lbacktrace -lffi -lSDL2 -lGL -Wl,-rpath -Wl,\$ORIGIN
+cp ~/Beef/build_rt_d/Debug/bin/libBeefySysLib_d.so dist
