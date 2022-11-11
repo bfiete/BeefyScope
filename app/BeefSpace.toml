@@ -1,0 +1,14 @@
+FileVersion = 1
+Projects = {app = {Path = "."}, Beefy2D = "*"}
+Unlocked = ["Beefy2D"]
+
+[Workspace]
+StartupProject = "BeefyScope"
+
+[Configs.Debug.aarch64-none-linux-unknown]
+IntermediateType = "ObjectAndIRCode"
+
+[Configs.Release.aarch64-none-linux-unknown]
+Toolset = "GNU"
+LTOType = "None"
+IntermediateType = "ObjectAndIRCode"

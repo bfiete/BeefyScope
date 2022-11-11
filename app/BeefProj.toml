@@ -1,0 +1,20 @@
+FileVersion = 1
+Dependencies = {corlib = "*", Beefy2D = "*"}
+
+[Project]
+Name = "BeefyScope"
+TargetType = "BeefGUIApplication"
+StartupObject = "BeefyScope.Program"
+
+[Configs.Debug.Win64]
+TargetDirectory = "$(WorkspaceDir)/dist"
+TargetName = "$(ProjectName)_d"
+
+[Configs.Debug.aarch64-none-linux-unknown]
+BuildKind = "StaticLib"
+
+[Configs.Release.Win64]
+TargetDirectory = "$(WorkspaceDir)/dist"
+
+[Configs.Release.aarch64-none-linux-unknown]
+BuildKind = "StaticLib"
