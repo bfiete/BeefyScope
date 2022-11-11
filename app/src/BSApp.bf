@@ -246,11 +246,10 @@ class BSApp : BFApp
 				}
 			}
 
+			// LOD3, LOD4
 			for (int lod in 3...4)
 			{
-				uint8* lodDestPtr = mLODMemory[lod].Ptr + mSamplerHead / (BSApp.cLODScale[lod] / 2);
-
-				//int dest
+				uint8* lodDestPtr = mLODMemory[lod].Ptr + ((mSamplerHead / (BSApp.cLODScale[lod] / 2)) & ~1);
 
 				if (mSamplerHead % BSApp.cLODScale[lod] == 0)
 				{
@@ -259,8 +258,10 @@ class BSApp : BFApp
 				}
 				else
 				{
-					*(lodDestPtr++) = Math.Min(*lodDestPtr, totalMinVal);
-					*(lodDestPtr++) = Math.Max(*lodDestPtr, totalMaxVal);
+					*lodDestPtr = Math.Min(*lodDestPtr, totalMinVal);
+					++lodDestPtr;
+					*lodDestPtr = Math.Max(*lodDestPtr, totalMaxVal);
+					++lodDestPtr;
 				}
 			}
 
