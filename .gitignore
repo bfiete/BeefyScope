@@ -19,3 +19,6 @@ sdkconfig.old
 *_User.toml
 fp-info-cache
 *.user
+History/
+__Previews/
+*.LOG
