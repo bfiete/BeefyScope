@@ -1634,7 +1634,7 @@
     (property "Reference" "D1" (id 0) (at 52.07 63.5 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "SMAJ16A" (id 1) (at 52.07 68.58 90)
+    (property "Value" "SMAJ15CA" (id 1) (at 52.07 68.58 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Diode_SMD:D_SMA" (id 2) (at 50.8 66.04 0)
@@ -1643,7 +1643,7 @@
     (property "Datasheet" "~" (id 3) (at 50.8 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC Part" "C908770" (id 4) (at 50.8 66.04 90)
+    (property "LCSC Part" "C353477" (id 4) (at 50.8 66.04 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid aad1cfe4-b01a-4b8b-9c88-78d50097c07a))
@@ -1894,7 +1894,7 @@
       (reference "C20") (unit 1) (value "22uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/d200cae5-4ea1-4a26-90db-fb0f7da5ff0c"
-      (reference "D1") (unit 1) (value "SMAJ16A") (footprint "Diode_SMD:D_SMA")
+      (reference "D1") (unit 1) (value "SMAJ15CA") (footprint "Diode_SMD:D_SMA")
     )
     (path "/1989359f-ada5-4906-a23b-5c103295523a"
       (reference "F1") (unit 1) (value "Fuse") (footprint "Beefy:FUSE_C206912")
